@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-MediumItalic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+  
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/radiant-gradient.svg);
+    background-size: cover;
+    background-position-x: center;
+}
+  
+.content{
+    flex: 1 0 auto;
+}
+
+nav{
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+}
+
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: #000;
+}
+
+nav ul li{
+    width: 120px;
+    margin: 7px;
+    padding: 17px;
+    font-family: Roboto;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 11px 13px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    font-size: 18.5px;
+    border-radius: 6px;
+    text-decoration: underline;
+    text-decoration-color: rgb(29, 29, 29);
+}
+
+.me{
+    font-size: xx-large;
+}
+
+.home{
+    padding-left: 200px; 
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#big{
+    height: 200px;
+    width: 300px;
+}
+
+#grid{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: [one] 300px [two] 478px [three] 450px;
+    grid-template-rows: [first] 300px [second] 440px;   
+}
+
+.item1{
+    width: 275px;
+    height: 293px;
+    grid-column: one;
+    grid-row: first;
+}
+
+.item2{
+    width: 475px;
+    height: 267px;
+    grid-column: two;
+    grid-row: first;
+    padding-top: 10px;
+}
+
+.item3{
+    width: 450px;
+    height: 300px;
+    grid-column: three;
+    grid-row: first;
+    transform: translateY(-10px);
+}
+
+.item4{
+    width: 300px;
+    height: 325px;
+    grid-column: one;
+    grid-row: second;
+}
+
+.item5{
+    width: 400px;
+    height: 224px;
+    grid-column: two;
+    grid-row: second;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-family: Roboto;
+    color: white;
+    margin-top: 19px;
+}
+
+footer p a{
+    text-decoration: underline;
+    color: white;
+}
